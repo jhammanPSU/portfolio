@@ -21,6 +21,7 @@ a:hover {
 
 .a-style {color: #b4341a;}
 
+header, main {width:100%; margin:auto;}
 /* HEADER STYLES */
 header {
 	padding: 60px;
@@ -65,7 +66,7 @@ main {
 }
 
 main h2 {
-	margin-top: 60px;
+	/*margin-top: 30px;*/
 }
 
 p {
@@ -83,15 +84,38 @@ p {
     padding: 1em;
 }
 
-.feature {
 
+.myproject {
+  color: white;
+  background-color: dodgerblue;
+  padding: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+
+/*content boxes*/
+.feature-cvr {
+
+}
+
+.proj-thumb-cvr {
+	box-shadow: 2px 2px 5px #999;
+	width: 80%;
+	height: auto;
+}
+
+.feature {
+	
 }
 
 .proj-thumb {
 	box-shadow: 2px 2px 5px #999;
 	width: 100%;
 	height: auto;
+
 }
+/*content boxes*/
 
 .proj-descript {
 	box-shadow: 2px 2px 5px #999;
@@ -102,12 +126,22 @@ p {
 .go-link:after {
 	content: ' \21D2';
 }
+
 .round {
 	border-radius: 50%;
 }
 
 .why {
-	/*text-align: center;*/
+		image-rendering: ;
+		display:grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-gap: 80px;
+		margin: auto;
+		width: 80%;
+}
+
+.why img {
+	width: 100%;
 }
 
 .more {
@@ -127,7 +161,7 @@ blockquote:after {
 }
 
 footer {
-	background-color: #333;
+	background-color: #000;
 	height: 120px;
 
 }
@@ -136,10 +170,10 @@ ul.social {
 	margin-top: 0;
 	padding-top: 40px;
 	list-style-type: none; 
-	color: #FFF;
+	color: #000;
 }
 .social li {
-	color: #fff;
+	color: #000;
 }
 .social a {
 	color: #000;
