@@ -106,14 +106,12 @@ p {
 }
 
 .feature {
-	
 }
 
 .proj-thumb {
 	box-shadow: 2px 2px 5px #999;
 	width: 100%;
 	height: auto;
-
 }
 /*content boxes*/
 
@@ -156,28 +154,51 @@ blockquote {
 blockquote:before {
 	content: open-quote;
 }
+
 blockquote:after {
 	content: close-quote;
 }
 
 footer {
-	background-color: #000;
+	background-color: #333;
 	height: 120px;
-
 }
+
+
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+ul.closer { 
+	width: 100%;
+	margin-top: 0;
+	padding-top: 40px;
+	list-style-type: none; 
+	color: #FFF;
+}
+
+.closer li { color: #fff; }
+
+.closer a { color: white; }
+
+/*------------------------------------------------------------------------------------*/
+
 ul.social { 
 	width: 100%;
 	margin-top: 0;
 	padding-top: 40px;
 	list-style-type: none; 
-	color: #000;
+	color: #FFF;
 }
-.social li {
-	color: #000;
-}
-.social a {
-	color: #000;
-}
+.social li { color: #fff;}
+.social a {	color: #333;}
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
+
+
+
 
 
 @media only screen and (min-width: 768px) {
@@ -196,9 +217,112 @@ ul.social {
 		width: 80%;
 		margin: auto;
 		grid-template-columns: 1fr 1fr 1fr;
-		}
-		.feature{
-			grid-column: 1/3;
-			grid-row: 1/3;
-		}
+	}
+
+	.feature{
+		grid-column: 1/3;
+		grid-row: 1/3;
+	}
 }
+
+
+
+
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------*/
+
+
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: center;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: inline-block;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 4px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: show;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+  max-height: 300px;
+  max-width: 300px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Six columns side by side */
+.column {
+  float: center;
+  width: cover;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
